@@ -284,51 +284,36 @@ const Index = () => {
             </Card>
           </div>
 
-          <Card className="border-2 border-muted shadow-xl">
-            <CardHeader>
-              <CardTitle className="text-2xl text-secondary">Напишите нам</CardTitle>
-              <CardDescription>Мы ответим в течение 24 часов</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Input 
-                    placeholder="Ваше имя" 
-                    required 
-                    className="border-2 border-muted focus:border-primary"
-                  />
+          <Card className="border-2 border-muted shadow-xl bg-gradient-to-br from-primary/5 to-accent/10">
+            <CardContent className="pt-8 pb-8">
+              <div className="text-center space-y-6">
+                <div className="w-20 h-20 mx-auto bg-primary rounded-full flex items-center justify-center shadow-lg">
+                  <Icon name="Send" className="text-primary-foreground" size={40} />
                 </div>
                 <div>
-                  <Input 
-                    type="email" 
-                    placeholder="Email" 
-                    required 
-                    className="border-2 border-muted focus:border-primary"
-                  />
+                  <h3 className="text-3xl font-black text-secondary mb-2">Быстрый заказ</h3>
+                  <p className="text-muted-foreground text-lg">
+                    Свяжитесь с нами в Telegram для оформления заказа
+                  </p>
                 </div>
-                <div>
-                  <Input 
-                    type="tel" 
-                    placeholder="Телефон" 
-                    className="border-2 border-muted focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <Textarea 
-                    placeholder="Ваше сообщение" 
-                    required 
-                    rows={5}
-                    className="border-2 border-muted focus:border-primary"
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" 
-                  size="lg"
+                <a 
+                  href="https://t.me/fromNature7" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block"
                 >
-                  Отправить сообщение
-                </Button>
-              </form>
+                  <Button 
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all text-lg px-8 py-6"
+                  >
+                    <Icon name="Send" className="mr-2" size={24} />
+                    Заказать в Telegram
+                  </Button>
+                </a>
+                <p className="text-sm text-muted-foreground">
+                  Или позвоните по телефону: <a href="tel:+79394539212" className="font-bold text-primary hover:text-primary/80">+7 939 453 9212</a>
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
