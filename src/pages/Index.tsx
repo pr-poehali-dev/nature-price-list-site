@@ -209,7 +209,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Телефон</p>
-                    <p className="text-xl font-bold text-secondary">+7 (495) 123-45-67</p>
+                    <p className="text-xl font-bold text-secondary">+7 939 453 9212</p>
                   </div>
                 </div>
               </CardContent>
@@ -219,11 +219,13 @@ const Index = () => {
               <CardContent className="pt-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                    <Icon name="Mail" className="text-primary-foreground" size={24} />
+                    <Icon name="Send" className="text-primary-foreground" size={24} />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-xl font-bold text-secondary">info@lasunak.by</p>
+                    <p className="text-sm text-muted-foreground">Telegram для заказа</p>
+                    <a href="https://t.me/fromNature7" target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-primary hover:text-primary/80 transition-colors">
+                      @fromNature7
+                    </a>
                   </div>
                 </div>
               </CardContent>
