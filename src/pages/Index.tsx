@@ -81,8 +81,11 @@ const Index = () => {
             <h1 className="text-6xl font-black text-secondary leading-tight">
               Вкус от природы
             </h1>
+            <p className="text-3xl text-secondary font-bold mb-2">
+              Ласунак сыровяленый
+            </p>
             <p className="text-2xl text-muted-foreground font-light">
-              Сыровяленый. Только мясо и специи
+              Только мясо и специи
             </p>
             <div className="flex gap-4 justify-center">
               <Button 
