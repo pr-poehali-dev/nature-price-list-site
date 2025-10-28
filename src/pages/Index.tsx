@@ -14,26 +14,26 @@ const Index = () => {
     {
       name: 'Свинина',
       price: '180₽/100гр',
-      description: 'Свежая охлажденная свинина высшего качества',
-      icon: 'Beef'
+      description: 'Отличное колбасное изделие из свинины высшего сорта',
+      icon: 'Pizza'
     },
     {
       name: 'Говядина',
       price: '220₽/100гр',
-      description: 'Мраморная говядина отборных сортов',
-      icon: 'Beef'
+      description: 'Отличное колбасное изделие из мраморной говядины',
+      icon: 'Pizza'
     },
     {
       name: 'Конина',
       price: '250₽/100гр',
-      description: 'Диетическое мясо конины премиум класса',
-      icon: 'Beef'
+      description: 'Отличное колбасное изделие из диетического мяса конины',
+      icon: 'Pizza'
     },
     {
       name: 'Баранина',
       price: '270₽/100гр',
-      description: 'Нежная баранина домашнего разведения',
-      icon: 'Beef'
+      description: 'Отличное колбасное изделие из нежной баранины',
+      icon: 'Pizza'
     }
   ];
 
@@ -151,43 +151,81 @@ const Index = () => {
             <h2 className="text-5xl font-black text-secondary mb-4">О компании</h2>
           </div>
           <Card className="border-2 border-muted shadow-xl">
-            <CardContent className="pt-8 space-y-6">
+            <CardContent className="pt-8 space-y-8">
+              <div className="text-center mb-6">
+                <h3 className="text-3xl font-black text-secondary mb-4">Вкус, Рожденный Традициями и Страстью</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  В сердце «Ласунак сыровяленый» лежит непоколебимая вера: истинное наслаждение рождается из чистоты ингредиентов, 
+                  безупречного качества и безграничного терпения. Наша история — это дань вековым белорусским рецептам и страстному 
+                  стремлению дарить вам продукт, который вызывает истинную гордость и восхищение.
+                </p>
+              </div>
+
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shrink-0">
-                  <Icon name="Award" className="text-primary-foreground" size={24} />
+                  <Icon name="Sparkles" className="text-primary-foreground" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-secondary mb-2">Традиции качества</h3>
+                  <h3 className="text-2xl font-bold text-secondary mb-2">Искусство Создания</h3>
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Более 35 лет мы производим колбасные изделия высшего качества. Используем только 
-                    натуральное мясо и специи, без искусственных добавок и консервантов.
+                    Мы подходим к созданию сыровяленых деликатесов как к искусству. Каждый наш продукт начинается с отборного мяса 
+                    высшего сорта, тщательно подобранного у проверенных поставщиков. Его дополняют изысканные, 100% натуральные специи, 
+                    бережно отобранные и мастерски сбалансированные.
                   </p>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shrink-0">
-                  <Icon name="ShieldCheck" className="text-primary-foreground" size={24} />
+                  <Icon name="Clock" className="text-primary-foreground" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-secondary mb-2">Натуральный состав</h3>
+                  <h3 className="text-2xl font-bold text-secondary mb-2">Вековые Традиции</h3>
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Только мясо, соль и специи. Никаких ароматизаторов, усилителей вкуса и 
-                    красителей. Вся продукция имеет необходимые сертификаты качества.
+                    Весь секрет непревзойденного вкуса кроется в медленном сыровялении по старинным технологиям, где время и природа 
+                    творят волшебство, раскрывая каждый нюанс аромата и текстуры. Мы контролируем каждый этап, от фермы до вашей тарелки.
                   </p>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shrink-0">
-                  <Icon name="Truck" className="text-primary-foreground" size={24} />
+                  <Icon name="Heart" className="text-primary-foreground" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-secondary mb-2">Свежее производство</h3>
+                  <h3 className="text-2xl font-bold text-secondary mb-2">Искренняя Забота</h3>
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Производим продукцию небольшими партиями, что гарантирует свежесть каждой колбасы. 
-                    Доставка в день заказа с соблюдением температурного режима.
+                    Наша главная ценность простирается за пределы производства: это искреннее внимание к каждому клиенту. Мы обрабатываем 
+                    каждый заказ с особой заботой, понимая, что наши деликатесы приносят радость и украшают самые важные моменты вашей жизни.
                   </p>
                 </div>
               </div>
+
+              <div className="border-t-2 border-muted pt-6 mt-6">
+                <h3 className="text-2xl font-bold text-secondary mb-4 text-center">Выбирая «ЛАСУНАК», вы выбираете:</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3">
+                    <Icon name="Check" className="text-primary" size={24} />
+                    <span className="text-muted-foreground">Подлинную Натуральность</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Check" className="text-primary" size={24} />
+                    <span className="text-muted-foreground">Вековые Традиции</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Check" className="text-primary" size={24} />
+                    <span className="text-muted-foreground">Безупречное Качество</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Check" className="text-primary" size={24} />
+                    <span className="text-muted-foreground">Искреннюю Заботу</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-center text-xl font-semibold text-primary italic mt-6">
+                Мы благодарим вас за выбор и доверие!
+              </p>
             </CardContent>
           </Card>
         </div>
