@@ -237,7 +237,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Адрес</p>
-                    <p className="text-xl font-bold text-secondary">г. Минск, пр-т Независимости, д. 85</p>
+                    <p className="text-xl font-bold text-secondary">г. Краснодар</p>
                   </div>
                 </div>
               </CardContent>
