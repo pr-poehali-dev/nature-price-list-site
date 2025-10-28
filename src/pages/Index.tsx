@@ -75,8 +75,12 @@ const Index = () => {
       <section id="home" className="pt-32 pb-20 px-6">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto space-y-8">
-            <div className="w-32 h-32 mx-auto bg-primary rounded-full flex items-center justify-center shadow-2xl border-4 border-accent">
-              <Icon name="ChefHat" className="text-primary-foreground" size={64} />
+            <div className="w-48 h-48 mx-auto flex items-center justify-center">
+              <img 
+                src="https://cdn.poehali.dev/files/9c0e9268-1817-41e4-a686-b21831f5cdf0.jpg" 
+                alt="Ласунак - повар" 
+                className="w-full h-full object-contain drop-shadow-2xl"
+              />
             </div>
             <h1 className="text-6xl font-black text-secondary leading-tight">
               Вкус от природы
