@@ -12,28 +12,28 @@ const Index = () => {
 
   const products = [
     {
-      name: 'Свинина',
-      price: '180₽/100гр',
-      description: 'Свежая охлажденная свинина высшего качества',
-      icon: 'Beef'
+      name: 'Сыровяленая',
+      price: '450₽/кг',
+      description: 'Классическая сыровяленая колбаса из отборного мяса',
+      icon: 'Pizza'
     },
     {
-      name: 'Говядина',
-      price: '220₽/100гр',
-      description: 'Мраморная говядина отборных сортов',
-      icon: 'Beef'
+      name: 'Докторская',
+      price: '320₽/кг',
+      description: 'Нежная вареная колбаса по ГОСТу',
+      icon: 'Pizza'
     },
     {
-      name: 'Конина',
-      price: '250₽/100гр',
-      description: 'Диетическое мясо конины премиум класса',
-      icon: 'Beef'
+      name: 'Копченая',
+      price: '380₽/кг',
+      description: 'Ароматная копченая колбаса на натуральных специях',
+      icon: 'Pizza'
     },
     {
-      name: 'Баранина',
-      price: '270₽/100гр',
-      description: 'Нежная баранина домашнего разведения',
-      icon: 'Beef'
+      name: 'Салями',
+      price: '420₽/кг',
+      description: 'Итальянская салями с пикантным вкусом',
+      icon: 'Pizza'
     }
   ];
 
@@ -60,7 +60,7 @@ const Index = () => {
               <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                 <Icon name="ChefHat" className="text-primary-foreground" size={24} />
               </div>
-              <span className="text-2xl font-bold text-primary-foreground">МясникЪ</span>
+              <span className="text-2xl font-bold text-primary-foreground">Ласунак</span>
             </div>
             <div className="hidden md:flex gap-8">
               {['home', 'price', 'about', 'contact'].map((section) => (
@@ -89,10 +89,10 @@ const Index = () => {
               <Icon name="ChefHat" className="text-primary-foreground" size={64} />
             </div>
             <h1 className="text-6xl font-black text-secondary leading-tight">
-              МясникЪ
+              Ласунак
             </h1>
             <p className="text-2xl text-muted-foreground font-light">
-              Традиционное качество с 1987 года
+              Сыровяленый. Только мясо и специи
             </p>
             <div className="flex gap-4 justify-center">
               <Button 
@@ -159,9 +159,8 @@ const Index = () => {
                 <div>
                   <h3 className="text-2xl font-bold text-secondary mb-2">Традиции качества</h3>
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Более 35 лет мы поставляем свежее мясо высшего качества. Наша компания работает 
-                    напрямую с проверенными фермерскими хозяйствами, что гарантирует свежесть и 
-                    натуральность всей продукции.
+                    Более 35 лет мы производим колбасные изделия высшего качества. Используем только 
+                    натуральное мясо и специи, без искусственных добавок и консервантов.
                   </p>
                 </div>
               </div>
@@ -170,10 +169,10 @@ const Index = () => {
                   <Icon name="ShieldCheck" className="text-primary-foreground" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-secondary mb-2">Сертификация</h3>
+                  <h3 className="text-2xl font-bold text-secondary mb-2">Натуральный состав</h3>
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Вся продукция проходит строгий ветеринарный контроль и имеет все необходимые 
-                    сертификаты качества. Мы гарантируем безопасность нашего мяса.
+                    Только мясо, соль и специи. Никаких ароматизаторов, усилителей вкуса и 
+                    красителей. Вся продукция имеет необходимые сертификаты качества.
                   </p>
                 </div>
               </div>
@@ -182,10 +181,10 @@ const Index = () => {
                   <Icon name="Truck" className="text-primary-foreground" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-secondary mb-2">Быстрая доставка</h3>
+                  <h3 className="text-2xl font-bold text-secondary mb-2">Свежее производство</h3>
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Осуществляем доставку по городу и области в специализированном рефрижераторе, 
-                    сохраняя температурный режим на всех этапах транспортировки.
+                    Производим продукцию небольшими партиями, что гарантирует свежесть каждой колбасы. 
+                    Доставка в день заказа с соблюдением температурного режима.
                   </p>
                 </div>
               </div>
@@ -224,7 +223,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-xl font-bold text-secondary">info@myasnik.ru</p>
+                    <p className="text-xl font-bold text-secondary">info@lasunak.by</p>
                   </div>
                 </div>
               </CardContent>
@@ -238,7 +237,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Адрес</p>
-                    <p className="text-xl font-bold text-secondary">г. Москва, ул. Мясницкая, д. 10</p>
+                    <p className="text-xl font-bold text-secondary">г. Минск, пр-т Независимости, д. 85</p>
                   </div>
                 </div>
               </CardContent>
@@ -301,13 +300,13 @@ const Index = () => {
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
               <Icon name="ChefHat" className="text-primary-foreground" size={20} />
             </div>
-            <span className="text-xl font-bold text-primary-foreground">МясникЪ</span>
+            <span className="text-xl font-bold text-primary-foreground">Ласунак</span>
           </div>
           <p className="text-primary-foreground/80">
-            © 2024 МясникЪ. Все права защищены.
+            © 2024 Ласунак. Все права защищены.
           </p>
           <p className="text-primary-foreground/60 text-sm mt-2">
-            Традиционное качество с 1987 года
+            Сыровяленый. Только мясо и специи
           </p>
         </div>
       </footer>
